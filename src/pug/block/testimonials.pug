@@ -1,0 +1,36 @@
+.c-testimonials
+  h2.heading--secondary What they’ve said
+  .glide
+    .glide__track(data-glide-el="track")
+      ul.glide__slides
+        li.glide__slide
+          figure.c-testimonial
+            header.c-testimonial__img: img(src="images/avatar-anisha.png", alt="avatar-anisha")
+            cite.c-testimonial__author Anisha Li
+            blockquote.c-testimonial__text “Manage has supercharged our team’s workflow. The ability to maintain visibility on larger milestones at all times keeps everyone motivated.”
+        li.glide__slide
+          figure.c-testimonial
+            header.c-testimonial__img: img(src="images/avatar-ali.png", alt="avatar-ali")
+            cite.c-testimonial__author Ali Bravo
+            blockquote.c-testimonial__text “We have been able to cancel so many other subscriptions since using Manage. There is no more cross-channel confusion and everyone is much more focused.”
+        li.glide__slide
+          figure.c-testimonial
+            header.c-testimonial__img: img(src="images/avatar-richard.png", alt="avatar-richard")
+            cite.c-testimonial__author Richard Watts
+            blockquote.c-testimonial__text “Manage allows us to provide structure and process. It keeps us organized and focused. I can’t stop recommending them to everyone I talk to!”
+        li.glide__slide
+          figure.c-testimonial
+            header.c-testimonial__img: img(src="images/avatar-shanai.png", alt="avatar-shanai")
+            cite.c-testimonial__author Shanai Gough
+            blockquote.c-testimonial__text “Their software allows us to track, manage and collaborate on our projects from anywhere. It keeps the whole team in-sync without being intrusive.”
+              
+    .glide__arrows(data-glide-el="controls")
+      button.glide__arrow.glide__arrow--left(data-glide-dir="<"): i.fa.fa-angle-left
+      button.glide__arrow.glide__arrow--right(data-glide-dir=">"): i.fa.fa-angle-right
+    .glide__bullets(data-glide-el="controls[nav]")
+      button.glide__bullet(data-glide-dir="=0") 
+      button.glide__bullet(data-glide-dir="=1") 
+      button.glide__bullet(data-glide-dir="=2") 
+      button.glide__bullet(data-glide-dir="=3") 
+  .c-testimonials__cta
+    a(href="#!").c-btn.c-btn--medium.c-btn--orange Get Started

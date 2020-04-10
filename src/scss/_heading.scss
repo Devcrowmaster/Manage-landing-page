@@ -1,0 +1,28 @@
+.heading{
+  &--primary,&--secondary{
+    color: $Dark-Blue;
+    line-height: 1.3;
+  }
+  &--primary{
+    font-size: 2.3rem;
+    @media ($tablet){
+      font-size: 2.7rem;
+      width: 80%;
+      margin: 0 auto;
+    }
+    @media ($desktop){
+      width: 100%;
+      font-size: 3rem;
+    }
+  }
+  &--secondary{
+    margin: 0;
+    font-size: 1.8rem;
+    @media ($tablet){
+      font-size: 2.2rem;
+    }
+    @media ($desktop){
+      font-size: 2.5rem;
+    }
+  }
+}

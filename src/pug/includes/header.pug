@@ -1,0 +1,22 @@
+header
+  .fixed#main-navbar
+    .o-container.main-navbar
+      .brand
+        a(href="index.html").brand__logo
+          img(src="images/logo.svg", alt="logo")
+      #burger.icon__burger
+        span
+        span
+        span
+      nav.menu-navbar
+        ul.c-menu.c-menu--main
+          li.c-menu__item: a(href="#!").c-menu__link Pricing
+          li.c-menu__item: a(href="#!").c-menu__link Product
+          li.c-menu__item: a(href="#!").c-menu__link About Us
+          li.c-menu__item: a(href="#!").c-menu__link Careers
+          li.c-menu__item: a(href="#!").c-menu__link Community
+      nav.menu-cta
+        ul.c-menu.c-menu--cta
+          li.c-menu__item: a(href="#!").c-btn.c-btn--orange.c-btn--medium Get Started
+
+  include ../block/intro

@@ -1,0 +1,31 @@
+.c-manage{
+  margin-top: 6rem;
+  display: grid;
+  gap: 3rem;
+  &__content{
+    text-align: center;
+    padding: 0 2rem;
+    @media ($desktop){
+      padding: 0;
+      text-align: left;
+    }
+  }
+  &__description{
+    color: $Dark-Grayish-Blue;
+    line-height: 1.8;
+    font-size: .9rem;
+    @media ($tablet){
+      width: 80%;
+      margin: 1rem auto;
+    }
+    @media ($desktop){
+      font-size: 1rem;
+      width: 70%;
+      margin: 1.5rem 0;
+    }
+  }
+  @media ($desktop){
+    gap: 5rem;
+    grid-template-columns: repeat(2,1fr);
+  }
+}

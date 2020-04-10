@@ -1,0 +1,61 @@
+.c-footer{
+  background-color: $Very-Dark-Blue;
+  padding: 3rem 0 2rem 0;
+  &__content{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-items: center;
+    row-gap: 2.5rem;
+    @media ($desktop){
+      grid-template-columns: repeat(3,1fr) 2fr;
+      row-gap: 0;
+    }
+  }
+  &__group,&__brand,&__copy{
+    grid-column: 1/3;
+  }
+  &__group{
+    @media ($tablet){
+      width: 70%;
+    }
+    @media ($desktop){
+      display: flex;
+      align-items: baseline;
+      justify-content: flex-end;
+      width: 100%;
+      grid-column: 4/4;
+    }
+  }
+  &__email{
+    border-radius: 3rem;
+    padding: .6rem 1rem;
+    border: none;
+    margin-right: 1rem;
+    font-size: .9rem;
+    &::placeholder{
+      font-size: .8rem;
+    }
+    @media ($tablet){
+      width: 80%;
+    }
+    @media ($desktop){
+      width: auto;
+    }
+  }
+  &__brand{  
+    @media ($desktop){
+      grid-row: 1 ;
+      grid-column: 1/1;
+    }
+  }
+  &__copy{
+    color: $Dark-Grayish-Blue;
+    font-size: .8rem;
+    @media ($desktop){
+      grid-column: 4/4;
+      grid-row: 2/2;
+      width: 100%;
+      text-align: right;
+    }
+  }
+}

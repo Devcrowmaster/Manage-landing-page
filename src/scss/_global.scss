@@ -1,0 +1,51 @@
+:root{
+  --text: hsl(228, 39%, 23%);
+  --background: white;
+  --orange: hsl(12, 88%, 59%);
+  --height : 8rem;
+}
+
+html{
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+body{
+  font-family: $Be-Vietnam;
+}
+img{
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+.attribution{
+  font-size: 11px;
+  text-align: center;
+  margin: 0;
+  padding: 1.5rem 0;
+  color: white;
+  a{
+    color: hsl(228, 45%, 44%);
+  }
+}
+.o-container{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  @media ($tablet){
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  &--full{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+    @media ($desktop){
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+}

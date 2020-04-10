@@ -1,0 +1,32 @@
+.get-started{
+  margin-top: 3rem;
+  background-color: $Bright-Red;
+  background-image: url('../images/bg-simplify-section-mobile.svg');
+  background-repeat: no-repeat;
+  padding: 5.5rem 0;
+  background-position: left center;
+  &__content{
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    @media ($desktop){
+      text-align: left;
+      justify-items: flex-end;
+      grid-template-columns: repeat(2,1fr);
+      justify-content: space-between;
+    }
+  }
+  &__title{
+    margin: 0;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    color: white;
+  }
+  &__cta{
+    margin-top: 2rem;
+  }
+  @media ($desktop){
+    background-image: url('../images/bg-simplify-section-desktop.svg');
+  }
+}

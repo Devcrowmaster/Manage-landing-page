@@ -1,0 +1,32 @@
+.c-btn{
+  display: inline-block;
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 3rem;
+  font-size: .8rem;
+  color: white;
+  transition: all 300ms;
+  &--orange{
+    background-color: var(--orange);
+    &:hover{
+      box-shadow: 0 5px 10px rgba($Bright-Red,0.5);
+      opacity: .8;
+    }
+  }
+  &--white{
+    background: white;
+    color: $Bright-Red;
+    &:hover{
+      box-shadow: 0 5px 10px rgba(#000,0.5);
+      background-color: $Bright-Red;
+      color: white;
+    }
+  }
+  &--medium{
+    padding: 1rem 2rem;
+  }
+  &--small{
+    font-size: 1rem;
+    padding: .7rem 1.4rem;
+  }
+}
